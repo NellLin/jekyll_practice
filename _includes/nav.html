@@ -1,0 +1,7 @@
+<nav>
+	<ul class="nav {{include.navclass}}">
+		<li><a {% if page.url == "/index.html" %}data-status="active"{% endif %} href="{{site.baseurl}}/index.html">Home</a></li>
+		<li><a href="{{site.baseurl}}/hot/">Hot</a></li>
+		<li><a {% if page.url contains 'news' or page.url contains 'recent' %}data-status="active"{% endif %} href="{{site.baseurl}}/news.html">News</a></li>
+	</ul>
+</nav>
